@@ -1,0 +1,9 @@
+[Unit]
+Description=this is automatic django deployment script from sysra
+
+[Service]
+Type=simple
+ExecStart=/home/user/sysra/bootscript/automaticDjango.sh
+
+[Install]
+WantedBy=default.target
