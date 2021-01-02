@@ -37,9 +37,13 @@
       <script>
             function tesVolume() {
                 document.getElementById("sound").hidden=false;
+                var volume = document.getElementById("volumeRange").value;
                 $.ajax({
                     type : "GET",
                     url : "/tes_volume/",
+                    data : {
+                        'volume' : volume
+                    },
                     success : function(result) {
                         document.getElementById("sound").innerHTML = "Done";
                     },

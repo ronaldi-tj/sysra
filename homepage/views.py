@@ -7,5 +7,6 @@ def home(request):
     return render(request, 'homepage.html',{})
 
 def tes_sound(request):
-    subprocess.call("adjust_test_volume.sh")
+    volume = request.GET['volume']
+    subprocess.call("homepage/adjust_test_volume.sh " + volume)
     return JsonResponse({})
