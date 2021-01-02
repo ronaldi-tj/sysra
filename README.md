@@ -2,7 +2,7 @@
 Sysprog Project developed by Sysra team
 
 ## Executing script
-Main script that will be used in controlling Vitual Box volume is *adjust_test_volume.sh*.
+Main script that will be used in controlling Vitual Box volume is **adjust_test_volume.sh**.
 
 This script will adjust Virtual Box volume accordingly and produce sound to check if the right adjustments has been done or not.
 
